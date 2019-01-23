@@ -35,3 +35,27 @@ function crp_2019_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'crp_2019_pingback_header' );
+
+/** 
+ * Hero banners
+ * */ 
+
+function crp_2019_dynamic_css() {
+	switch(true) {
+		case is_page('front-page');
+		$hero = CFS()->get('hero_backgroundVid');
+		$custom_css = "
+					.hero-banner {
+						background:
+						linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100% ),
+						url({$hero}) no-repeat center bottom;
+						background-size: cover, cover; 	
+					};";
+					break;
+					default;
+					$custom_css = "";
+					break;
+				}
+			wp_add_inline_style('crp-style', $custom_css);
+}
+add_action('wp_enqueue_scripts', 'crp_2019_dynamic_css');
