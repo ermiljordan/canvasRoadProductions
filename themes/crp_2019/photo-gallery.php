@@ -17,8 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-
+		<?php echo photo_gallery(1); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
