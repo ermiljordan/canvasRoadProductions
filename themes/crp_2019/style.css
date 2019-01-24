@@ -914,3 +914,27 @@ body.down header.clone {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
+
+.about-crp {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.about-story {
+  background-color: #F0F3F5;
+  height: 100vh; }
+
+.about-connections {
+  background-color: #1A1A1A;
+  height: 100vh; }
+
+.about-professional {
+  background-color: #DBCDBE;
+  height: 100vh; }
