@@ -42,10 +42,10 @@ add_action( 'wp_head', 'crp_2019_pingback_header' );
 
 function crp_2019_dynamic_css() {
 	switch(true) {
-		case is_page('front-page');
-		$hero = CFS()->get('hero_backgroundVid');
+		case is_page('about');
+		$hero = CFS()->get('about_hero_image');
 		$custom_css = "
-					.hero-banner {
+					.about-crp {
 						background:
 						linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100% ),
 						url({$hero}) no-repeat center bottom;

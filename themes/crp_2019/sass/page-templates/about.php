@@ -1,6 +1,6 @@
 <?php
 /**
- * Template page for about.php
+ * Template name: About
  * 
  *
  * This is the most generic template file in a WordPress theme
@@ -18,7 +18,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			
+			<section class="about-crp">
+				<h2 class="about-header-caption">Canvas Road Productions <span class="yellow-stripe">Credit<span></h2>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
