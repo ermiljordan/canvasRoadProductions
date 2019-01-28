@@ -38,11 +38,10 @@ if ($videoID) {
 		echo '<div class="tinyVideoThumb">';
 		echo '<a href="' . get_permalink() . '" title="Go to ' . the_title() . '" rel="bookmark">';
 
-
 		if ( $video_url ) { // if there is a video URL
 			
 			// Get the video URL from custom field
-			$videoID = get_post_meta($post->ID, 'url_video', true); 
+			$videoID = get_post_meta($post->ID, 'video_url', true); 
 			// Query YouTube for video meta data
 			$thumb_query_url = 'http://gdata.youtube.com/feeds/api/videos/' . $videoID . '?v=2&alt=jsonc';
 			// Decode the json data from YouTube and put it in a readable format
