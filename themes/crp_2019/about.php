@@ -23,14 +23,27 @@ get_header();
 					<h2 class="about-header-caption">Canvas Road Productions <span class="yellow-stripe">Credit<span></h2>
 				</div>
 			</section>
+			<!-- end of about header -->
 			<section class="about-story">
-				<div class="story-wrapper">
-					<h2 class="story-captions">Our <span>story</span></h2>
+				<div class="container">
+					<h2 class="story-captions_title">Our <span>story</span></h2>
+					<div class="story-wrapper">
+							<figure class="story-img_left story-figure">
+								<img class="story-img" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+							</figure>
+							<figure class="story-img_right story-figure">
+								<img class="story-img" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+							</figure>
+						</div> 
+						<div class="story-parag">
+							<!-- custom field this -->
+						</div>
 				</div>
 			</section>
+			<!-- end of about story -->
 			<section class="about-connections">
-				<div class="connections-wrapper">
-					<h2 class="connection-caption">Connecting with <span>people</span></h2>
+				<div class="container">
+					<h2 class="connection-caption_title">Connecting with <span>people</span></h2>
 						<div class="connecting-wrapper">
 							<figure class="connecting-img_left">
 								<img class="connecting-img" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
@@ -49,7 +62,8 @@ get_header();
 						</div>
 				</div>
 			</section>
-			<section class="about-professional">
+			<!-- end of connections -->
+			<section class="container">
 				<div class="professional-wrapper">
 					<h2>We are <span>professionals</span></h2>
 				</div>

@@ -1,3 +1,21 @@
+// GLOBAL
+h2 {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+}
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+// GLOBAL -ends
+
+
 .about-crp {
   height: 100vh;
   display: flex;
@@ -9,7 +27,7 @@
   color: #888;
   background-color: #F0F3F5;
   text-align: center;
-  height: 100vh;
+  padding: 3.5rem 0 10rem;
 }
 .about-connections {
   color: #888;
@@ -23,18 +41,29 @@
   text-align: center;
   height: 100vh;
 }
-h2 {
-  font-size: 2em;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-style: normal;
-}
+
 h2.about-header-caption {
   font-family: 'Montserrat';
   font-weight: 600;
   font-style: normal;
 }
 
+//our story
+h2.story-captions_title {
+  color: #888;
+    display: inline-block;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.story-figure {
+  max-width: 25rem;
+}
+.story-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
 // Connecting people
 .connecting-img {
   height: 15em;
