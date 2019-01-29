@@ -31,6 +31,22 @@ get_header();
 			<section class="about-connections">
 				<div class="connections-wrapper">
 					<h2 class="connection-caption">Connecting with <span>people</span></h2>
+						<div class="connecting-wrapper">
+							<figure class="connecting-img_left">
+								<img class="connecting-img" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+							</figure>
+							<figure class="connecting-img_right">
+								<img class="connecting-img" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+							</figure>
+						</div> 
+						<div class="connecting-parag">
+							<div class="connecting-parag_left">
+								<!-- CUSTOM FIELD THIS SHIT -->
+							</div>
+							<div class="connecting-parag_right">
+								<!-- CUSTOM FIELD THIS SHIT -->
+							</div>
+						</div>
 				</div>
 			</section>
 			<section class="about-professional">

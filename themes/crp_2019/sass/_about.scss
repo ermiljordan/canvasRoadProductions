@@ -3,16 +3,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .about-story {
+  color: #888;
   background-color: #F0F3F5;
+  text-align: center;
   height: 100vh;
 }
 .about-connections {
+  color: #888;
   background-color: #1A1A1A;
+  text-align: center;
   height: 100vh;
 }
 .about-professional {
+  color: #888;
   background-color: #DBCDBE;
+  text-align: center;
   height: 100vh;
+}
+h2 {
+  font-size: 2em;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+}
+h2.about-header-caption {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+}
+
+// Connecting people
+.connecting-img {
+  height: 15em;
 }
