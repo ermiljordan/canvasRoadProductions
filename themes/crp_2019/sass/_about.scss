@@ -33,7 +33,7 @@ h2 {
   color: #888;
   background-color: #1A1A1A;
   text-align: center;
-  height: 100vh;
+  padding: 3.5rem 0 10rem;
 }
 .about-professional {
   color: #888;
@@ -65,6 +65,45 @@ h2.story-captions_title {
   justify-content: space-between;
 }
 // Connecting people
-.connecting-img {
-  height: 15em;
+h2.connection-caption_title {
+  color: #888;
+    display: inline-block;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+// .story-figure {
+//   max-width: 25rem;
+// }
+.connecting-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+//Story telling
+.story-telling_wrapper {
+  height: 85rem;
+  overflow: hidden;
+  
+}
+.story-telling {
+  background-color: #c5aa7b;
+  color: #e7d7be;
+  position: relative;
+}
+.camera-funk{
+  bottom: 0;
+  height: 27rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.camera-funk_img .camera-1 {
+  position: absolute;
+}
+.camera-funk_img .camera-1:first-child{
+  left:9rem;
+  top:10rem;
 }
