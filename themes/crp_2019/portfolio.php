@@ -30,6 +30,7 @@ get_header();
 		echo '<div class="tinyVideoThumb">';
 		echo '<a href="' . get_permalink() . '" title="Go to ' . the_title() . '" rel="bookmark">';
 		
+				 $video_url = get_post_custom_values();
 		if ( $video_url ) { // if there is a video URL
 			
 			// Get the video URL from custom field
