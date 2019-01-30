@@ -65,23 +65,50 @@ get_header();
 			<!-- end of connections -->
 			<section class="story-telling story-telling_wrapper">
 				<div class="container">
-					<h2>Story telling is our <span>language</span></h2>
-</div class="story-telling_parag">
-<!--  CUSTOM FIELD THIS SHIT -->
-</div>
-					<div class="camera-funk">
-						<figure class="camera-1 camera-funk_img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
-						</figure>
-						<figure class="camera-2 camera-funk_img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
-						</figure>
-						<figure class="camera-2 camera-funk_img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
-						</figure>
-						<figure class="camera-2 camera-funk_img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
-						</figure>
+					<div class="story-tell_header">
+						<h2 class="story-telling_cap">Story telling is our <span>language</span></h2>
+					</div>
+						<div class="story-telling_parag">
+							<!--  CUSTOM FIELD THIS SHIT -->
+						</div>
+						<div class="camera-funk">
+							<figure class="camera-1 camera-funk_img">
+								<img class="cameras" src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
+							</figure>
+							<figure class="camera-2 camera-funk_img">
+								<img class="cameras" src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
+							</figure>
+							<figure class="camera-2 camera-funk_img">
+								<img class="cameras" src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
+							</figure>
+							<figure class="camera-2 camera-funk_img">
+								<img class="cameras" src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
+							</figure>
+							<figure class="camera-2 camera-funk_img">
+								<img class="cameras" src="<?php echo get_template_directory_uri(); ?>/images/camera.png" alt="film camera">
+							</figure>
+						</div>
+				</div>
+				<div class="story-telling_banner">
+					<div class="banner-title banner-tittle--rotate js-block">
+						<div class="banner-title_inner">
+							<span>	
+							Creative direction
+							<div></div>
+							Professional
+							<div></div>
+							Story teller
+							<div></div>
+						</span>
+						<span>	
+							Creative direction
+							<div></div>
+							Professional
+							<div></div>
+							Story teller
+							<div></div>
+						</span>
+						</div>
 					</div>
 				</div>
 			</section>
