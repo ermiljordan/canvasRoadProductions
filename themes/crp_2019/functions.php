@@ -126,6 +126,8 @@ function crp_2019_scripts() {
 
 	wp_enqueue_script( 'crp_2019-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'crp_2019-javascript', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -159,65 +161,3 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
-// VIDEOS
-function get_video_thumbnail_uri( $video_uri ) {
-	
-	$thumbnail_uri = '';
-
-	// determine the type of video and the video id
-	$video = parse_video_uri( $video_uri );
-	
-	// get youtube thumbnail
-	if ( $video['type'] == 'youtube' )
-		$thumbnail_uri = 'http://img.youtube.com/vi/' . $video['id'] . '/hqdefault.jpg';
-	
-	if( empty( $thumbnail_uri ) || is_wp_error( $thumbnail_uri ) )
-		$thumbnail_uri = ''; 
-	
-	//return thumbnail uri
-	return $thumbnail_uri;
-	
-}
-
-
-/**
- * Parse the video uri/url to determine the video type/source and the video id
- */
-function parse_video_uri( $url ) {
-	
-	// Parse the url 
-	$parse = parse_url( $url );
-	
-	// Set blank variables
-	$video_type = '';
-	$video_id = '';
-	
-	// Url is http://youtu.be/xxxx
-	if ( $parse['host'] == 'youtu.be' ) {
-	
-		$video_type = 'youtube';
-		
-		$video_id = ltrim( $parse['path'],'/' );	
-		
-	}
-	
-	// Url is http://www.youtube.com/watch?v=xxxx 
-	// or http://www.youtube.com/watch?feature=player_embedded&v=xxx
-	// or http://www.youtube.com/embed/xxxx
-	if ( ( $parse['host'] == 'youtube.com' ) || ( $parse['host'] == 'www.youtube.com' ) ) {
-	
-		$video_type = 'youtube';
-		
-		parse_str( $parse['query'] );
-		
-		$video_id = $v;	
-		
-		if ( !empty( $feature ) )
-			$video_id = end( explode( 'v=', $parse['query'] ) );
-			
-		if ( strpos( $parse['path'], 'embed' ) == 1 )
-			$video_id = end( explode( '/', $parse['path'] ) );
-		
-	}
-}
