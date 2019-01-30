@@ -90,7 +90,7 @@ get_header();
 						</div>
 				</div>
 				<div class="story-telling_banner">
-					<div class="banner-title banner-tittle--rotate js-block">
+					<div class="banner-title banner-tittle--rotate js-block" data-block="title-block" data-vertical="true">
 						<div class="banner-title_inner">
 							<span>	
 							Creative direction
@@ -112,11 +112,7 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<section class="container">
-				<div class="professional-wrapper">
-					<h2>Painting with <span>light</span></h2>
-				</div>
-			</section>
+			<!-- End of story telling -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

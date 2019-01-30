@@ -1,6 +1,6 @@
 <?php
 /**
- * Template page for portfolio.php
+ * Template name:
  * 
  *
  * This is the most generic template file in a WordPress theme
