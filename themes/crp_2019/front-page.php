@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template for
+ * Template name: Home
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -16,8 +16,8 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
