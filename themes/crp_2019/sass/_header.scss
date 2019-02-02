@@ -77,7 +77,22 @@ body.down header.clone {
 //   -webkit-transform: rotate(45deg) translate(-8px, -8px);
 //   transform: rotate(45deg) translate(-8px, -8px);
 // }
+nav {
+  width: 100%;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+}
+#hamburger {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
 
+
+.hamburger-menu_wrapper {
+  display: none;
+}
 
 // Hamburger menu icon
 .bar1, .bar2, .bar3 {

@@ -35,28 +35,30 @@
 					<a href="<?php echo esc_url( home_url('/') ); ?>">
 					<h1 class="site-title">Outdoor Collective</h1>
 					</a>
-					<div id="hamburger">
-						<div class="hamburger-menu_wrapper">
-							<div class="hambuger-menu">
-								<?php
-								wp_nav_menu( array(
-									'theme_location' => 'menu-1',
-									'menu_id'        => 'primary-menu',
-								) );
-								?>
-								<div class="hamburger-icon">
-									<button id="hamburger-icon_open">
-										<div class="bar1"></div>
-										<div class="bar2"></div>
-										<div class="bar3"></div>
-									</button>
-									<div id="close-icon">
-										<div></div>
-									</div>
+					<nav>
+						<div id="hamburger">
+							<div class="hamburger-menu_wrapper">
+								<div class="hambuger-menu">
+									<?php
+									wp_nav_menu( array(
+										'theme_location' => 'menu-1',
+										'menu_id'        => 'primary-menu',
+									) );
+									?>
 								</div>
 							</div>
-						</div>
-					</div> <!--# hamburget -->
+									<div class="hamburger-icon">
+										<button id="hamburger-icon_open">
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+											<div class="bar3"></div>
+										</button>
+										<div id="close-icon">
+											<div></div>
+										</div>
+									</div>
+								</div>
+					</nav>
 				</div><!-- #header -->	
 			</div><!-- #header-background -->
 		</nav><!-- #site-navigation -->
