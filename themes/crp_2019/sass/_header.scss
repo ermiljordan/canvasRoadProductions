@@ -78,15 +78,7 @@ body.down header.clone {
 //   transform: rotate(45deg) translate(-8px, -8px);
 // }
 nav {
-  width: 100%;
-  z-index: 99;
-  position: absolute;
   top: 0;
-}
-#hamburger {
-  position: fixed;
-  z-index: 100;
-  width: 100%;
 }
 
 
@@ -102,7 +94,7 @@ nav {
   margin: 6px 0;
 }
 
-.change .bar1 {
+.change .close1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
   transform: rotate(-45deg) translate(-9px, 6px) ;
 }
@@ -111,3 +103,4 @@ nav {
 .bar2 .bar3{
   opacity: 0;
 }
+

@@ -54,7 +54,7 @@
 											<div class="bar3"></div>
 										</button>
 										<div id="close-icon">
-											<div></div>
+											<div class="close1"></div>
 										</div>
 									</div>
 								</div>
