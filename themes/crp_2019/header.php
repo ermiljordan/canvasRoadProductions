@@ -37,17 +37,7 @@
 					</a>
 					<nav>
 						<div id="hamburger">
-							<div class="hamburger-menu_wrapper">
-								<div class="hambuger-menu">
-									<?php
-									wp_nav_menu( array(
-										'theme_location' => 'menu-1',
-										'menu_id'        => 'primary-menu',
-									) );
-									?>
-								</div>
-							</div>
-									<div class="hamburger-icon">
+						<div class="hamburger-icon">
 										<button id="hamburger-icon_open">
 											<div class="bar1"></div>
 											<div class="bar2"></div>
@@ -57,7 +47,12 @@
 											<div class="close1"></div>
 										</div>
 									</div>
+							<div class="hamburger-menu_wrapper">
+								<div class="hamburger-menu">
+								<?php wp_nav_menu(array( 'menu_class' => 'nav-links-wrapper', 'link_before' => '<span class="nav-icon"></span>', 'link_after' => '',  'theme_location' => 'primary' )); ?>
 								</div>
+							</div>
+							</div>
 					</nav>
 				</div><!-- #header -->	
 			</div><!-- #header-background -->

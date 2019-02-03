@@ -11,4 +11,5 @@ $('#hamburger-icon_open').click(function(event) {
     $('#hamburger-icon_openn').show();
     $('.hamburger-menu_wrapper').animate({ height: 'hide' }, 500, function() {});
 });
+
 })(jQuery);

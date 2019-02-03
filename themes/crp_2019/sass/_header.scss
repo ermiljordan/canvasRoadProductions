@@ -84,6 +84,9 @@ nav {
 
 .hamburger-menu_wrapper {
   display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 // Hamburger menu icon
@@ -95,8 +98,8 @@ nav {
 }
 
 .change .close1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-30deg) scaleX(0);
+  transform-origin: left;
 }
 
 .change,
@@ -104,3 +107,23 @@ nav {
   opacity: 0;
 }
 
+
+
+// Side bar 
+.main-navigation li {
+  float: none;
+  display: flex;
+  flex-direction: column;
+}
+.hamburger-menu{
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .nav-links-wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
