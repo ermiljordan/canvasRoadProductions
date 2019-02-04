@@ -15,9 +15,28 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+		<video
+		vjs-fullscreen
+    id="my-player"
+    class="video-js"
+		preload="auto"
+		autoplay="true"
+		loop="true"
+		muted="true"
+		width="100%"
+    data-setup='{}'>
+  <source src="http://localhost:8888/canvasRoadProductions/wp-content/uploads/2019/02/aerialTeaser-3.mp4" type="video/mp4"></source>
 
-</div>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
+</video>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
