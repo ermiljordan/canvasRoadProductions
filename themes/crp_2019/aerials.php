@@ -30,30 +30,34 @@ if ($videoID) {
 ?>
 		<?php
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
-		?>
-		<?php 
-		// Calls up the YouTube video thumbnail or, if no URL is provided, the featured image from WordPress
-		
-		// Add a container and a link around the video
-		echo '<div class="tinyVideoThumb">';
-		echo '<a href="' . get_permalink() . '" title="Go to ' . the_title() . '" rel="bookmark">';
-
-		if ( $video_url ) { // if there is a video URL
+		//For Use with Repeater Field 
+		 $videos = get_field('videos');
+		 $videos_raw = get_field('videos', FALSE, FALSE);
 			
-			// Get the video URL from custom field
-			$videoID = get_post_meta($post->ID, 'video_url', true); 
-			// Query YouTube for video meta data
-			$thumb_query_url = 'http://gdata.youtube.com/feeds/api/videos/' . $videoID . '?v=2&alt=jsonc';
-			// Decode the json data from YouTube and put it in a readable format
-			$json = json_decode(file_get_contents( $thumb_query_url ));
-			// Echo out the thumbnail, give it height and weight and set the alternate description to post title
-			echo '<img src="' . $json->data->thumbnail->sqDefault . '" width="60" height="45" alt="' . the_title() . '">';
-			echo '</a>';
-			echo '</div>';								
-		}  
-		?>
-	<?php endwhile; else :?>
-	<?php the_post_thumbnail('tinyThumb', array('alt' => $postTitle, 'title' => $postTitle)); ?>
+		
+		//Add the Thubmnail to the $videos object
+			
+			foreach($videos_raw as $key => $video_raw) : 
+		
+					$videos[$key]['video_thumb'] = get_video_thumbnail_uri($video_raw['field_5c5a561fd96f8']); //Replace 'field_5449746362c3d' with your field's Field key (obtainable by going to screen options in the fields admin, and setting 'Show Field Key' to 'Yes')
+		
+			endforeach;
+			
+		
+		
+		//Loop through the $videos object
+			foreach($videos as $video): ?>
+			
+				<?php //Lightbox Link via Thumbnail ?>
+				<a href="#lightbox"><img src="<?php echo $video['video_thumb']; ?>"/></a>
+				
+				<?php //Lightbox Element with Video Embed Code ?>
+				<div id="lightbox" class="embed-container">
+				<?php echo $video['video'] ?>
+				</div>
+			
+			<?php endforeach; ?>
+	<?php endwhile; ?>
 <?php endif; ?>
 
 		</main><!-- #main -->
