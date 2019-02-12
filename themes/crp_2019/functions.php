@@ -305,3 +305,92 @@ function get_wistia_thumbnail_uri( $video_uri ) {
 	}
 	
 }
+
+
+//YOUUTUBE STUFF
+function ea_youtube_gallery_shortcode( $atts = array() ) {
+	$atts = shortcode_atts(
+		array(
+			'user' => false,
+		),
+		$atts,
+		'ea_youtube_gallery'
+	);
+	if( empty( $atts['user'] ) )
+		return;
+	$data = ea_get_youtube_videos( $atts['user'] );
+	if( empty( $data ) )
+		return;
+	$data = json_decode( $data );
+	if( empty( $data->items ) )
+		return;
+	$output = '<div class="youtube-gallery">';
+	// Video Player
+	$output .= '<div class="youtube-gallery--player">';
+	$output .= '<iframe width="800" height="500" src="https://www.youtube.com/embed/' . esc_attr( $data->items[0]->id->videoId ) . '?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+	$output .= '<h4>' . $data->items[0]->snippet->title . '</h4>';
+	$output .= '</div>';
+	// Video Listing
+	$output .= '<div class="youtube-gallery--listing">';
+	foreach( $data->items as $i => $item ) {
+		$class = 0 == $i ? 'item active' : 'item';
+		$output .= '<a href="#main-content" class="' . $class . '" data-id="' . esc_attr( $item->id->videoId ) . '">';
+		$output .= '<img src="' . esc_url( $item->snippet->thumbnails->high->url ) . '" />';
+		$output .= '<span class="title">' . esc_html( $item->snippet->title ) . '</span>';
+		$output .= '</a>';
+	}
+	$output .= '</div>';
+	$output .= '</div>';
+	return $output;
+}
+add_shortcode( 'ea_youtube_gallery', 'ea_youtube_gallery_shortcode' );
+/**
+ * Get Youtube Videos
+ *
+ */
+function ea_get_youtube_videos( $user = '' ) {
+	if( empty( $user ) )
+		return;
+	$key = 'ea_youtube_gallery_' . sanitize_text_field( $user );
+	$data = get_transient( $key );
+	if( false === $data ) {
+		$channel = ea_get_youtube_channel( $user );
+		$url = add_query_arg( array(
+			'part'       => 'snippet',
+			'channelId'  => $channel,
+			'order'      => 'date',
+			'maxResults' => 5,
+			'key'        => EA_YOUTUBE_API_KEY,
+		), 'https://www.googleapis.com/youtube/v3/search' );
+		$data = wp_remote_retrieve_body( wp_remote_get( $url ) );
+		set_transient( $key, $data, DAY_IN_SECONDS );
+	}
+	return $data;
+}
+/**
+ * Get Youtube Channel
+ *
+ */
+function ea_get_youtube_channel( $user = '' ) {
+	if( empty( $user ) )
+		return;
+	$channels = get_option( 'ea_youtube_gallery_channels' );
+	if( empty( $channels ) || empty( $channels[ $user ] ) ) {
+		$url = add_query_arg(
+			array(
+				'forUsername' => esc_attr( $user ),
+				'part'        => 'id',
+				'key'         => EA_YOUTUBE_API_KEY,
+			),
+			'https://www.googleapis.com/youtube/v3/channels'
+		);
+		$response = wp_remote_get( $url );
+		$data = json_decode( wp_remote_retrieve_body( $response ) );
+		if( !empty( $data->items ) )
+			$channels[ $user ] = $data->items[0]->id;
+		else
+			$channels[ $user ] = false;
+		update_option( 'ea_youtube_gallery_channels', $channels );
+	}
+	return $channels[ $user ];
+}

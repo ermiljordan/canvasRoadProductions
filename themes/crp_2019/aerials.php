@@ -45,11 +45,9 @@ echo '<div class="videoContainer">';
 		$thumbnail = get_sub_field('thumbnail');
 		$thumbnail_url = $thumbnail['url'];
 			echo '<div class="container thumbnail">';
-			echo '<a href="' . get_permalink() . $video_embed_url . '"><img src="' . $thumbnail_url . '" /></a>';
+			echo '<a href="' . $video_embed_url . '"><img src="' . $thumbnail_url . '" /></a>';
 			echo '</div>';
 		endwhile; 
-	else: 
-		the_post_thumbnail('tinyThumb', array('alt' => $postTitle, 'title' => $postTitle)); 
 	endif;
 ?>
 	</section>
