@@ -362,7 +362,7 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, .youtube-gallery--listing .title, h6 {
   clear: both; }
 
 p {
@@ -1156,6 +1156,22 @@ div[id^="bwg_container"] * {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 6em; }
+
+/* Youtube Gallery Shortcode
+--------------------------------------------- */
+.youtube-gallery--player {
+  max-width: 970px;
+  margin: 0 auto 70px; }
+  .youtube-gallery--player h4 {
+    margin-top: 14px; }
+
+.youtube-gallery--listing .title {
+  display: block;
+  margin-bottom: 0; }
+
+.youtube-gallery--listing .item.active,
+.youtube-gallery--listing .item:hover {
+  text-decoration: none; }
 
 @font-face {
   font-family: 'Montserrat';

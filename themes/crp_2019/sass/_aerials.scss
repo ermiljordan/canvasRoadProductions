@@ -6,3 +6,29 @@
   }
     
   
+/* Youtube Gallery Shortcode
+--------------------------------------------- */
+
+.youtube-gallery--player {
+	max-width: 970px;
+	margin: 0 auto 70px;
+
+	h4 {
+		margin-top: 14px;
+	}
+}
+
+.youtube-gallery--listing {
+
+	.title {
+		@extend h5;
+		display: block;
+		margin-bottom: 0;
+	}
+
+	.item.active,
+	.item:hover {
+		text-decoration: none;
+	}
+
+}

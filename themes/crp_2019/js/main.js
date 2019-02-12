@@ -19,5 +19,4 @@ $('.youtube-gallery--listing a').on('click', function(event) {
   $('.youtube-gallery--player iframe').attr('src', 'https://www.youtube.com/embed/' + $(this).data('id') + '?rel=0&showinfo=0' );
   $('.youtube-gallery--player h4').text( $(this).find('.title').text());
 });
-
 })(jQuery);
