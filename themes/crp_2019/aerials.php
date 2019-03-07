@@ -38,19 +38,6 @@ echo '<div class="videoContainer">';
 
          ?>
 </section>
-<section>
-<?php //For Use with Repeater Field 
-	if(have_rows('videos')): while(have_rows('videos')): the_row();
-		$video_embed_url = get_sub_field('video_embed', false, false);
-		$thumbnail = get_sub_field('thumbnail');
-		$thumbnail_url = $thumbnail['url'];
-			echo '<div class="container thumbnail">';
-			echo '<a href="' . $video_embed_url . '"><img src="' . $thumbnail_url . '" /></a>';
-			echo '</div>';
-		endwhile; 
-	endif;
-?>
-	</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
