@@ -21,7 +21,7 @@ get_header();
 
 <?php    
 echo '<div class="videoContainer">'; 
-  $value = get_field('event_video');
+  $value = get_field('aerial_video');
          if( $value ) {
                    
         echo $value;
@@ -37,6 +37,13 @@ echo '<div class="videoContainer">';
 					 }  
 
          ?>
+</section>
+<section>
+	<div class="aerial-header">
+		<h2 class="aerial-header_title">Aerial</h2>
+	</div>
+	<div class="aerial-info"> <!-- insert custom field here for aerial-info --> </div>
+	</div>
 </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
