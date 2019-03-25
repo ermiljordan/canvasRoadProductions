@@ -17,34 +17,36 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-<section>
+      <section>
+      <?php    
+      echo '<div class="videoContainer">'; 
+        $value = get_field('aerial_video');
+              if( $value ) {
+                        
+              echo $value;
 
-<?php    
-echo '<div class="videoContainer">'; 
-  $value = get_field('aerial_video');
-         if( $value ) {
-                   
-        echo $value;
+            } else {
 
-       } else {
+            $image = get_field('event_image');
 
-       $image = get_field('event_image');
-
-        if( !empty($image) ): ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo    $image['alt']; ?>" /> 
-                    <?php endif;
-   echo '</div>';                       
-					 }  
-
-         ?>
-</section>
-<section>
-	<div class="aerial-header">
-		<h2 class="aerial-header_title">Aerial</h2>
-	</div>
-	<div class="aerial-info"> <!-- insert custom field here for aerial-info --> </div>
-	</div>
-</section>
+              if( !empty($image) ): ?>
+                      <img src="<?php echo $image['url']; ?>" alt="<?php echo    $image['alt']; ?>" /> 
+                          <?php endif;
+        echo '</div>';                       
+                }  
+              ?>
+      </section>
+      <section>
+      <div class="container">
+        <div class="aerial-header">
+          <h2 class="aerial-header_title"><span>Aerial<span></h2>
+        </div>
+          <div class="aerial-info">
+            <?php echo CFS()->get('aerial_info'); ?>
+          </div>
+        </div>
+      </div>
+      </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

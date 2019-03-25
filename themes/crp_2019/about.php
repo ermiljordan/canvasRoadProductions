@@ -36,7 +36,7 @@ get_header();
 							</figure>
 					</div> 
 						<div class="story-parag">
-							<!-- custom field this -->
+							<?php echo CFS()->get('our_story_info'); ?>
 						</div>
 				</div>
 			</section>
@@ -54,10 +54,10 @@ get_header();
 						</div> 
 						<div class="connecting-parag">
 							<div class="connecting-parag_left">
-								<!-- CUSTOM FIELD THIS SHIT -->
+							<?php echo CFS()->get('connecting_left_info'); ?>
 							</div>
 							<div class="connecting-parag_right">
-								<!-- CUSTOM FIELD THIS SHIT -->
+							<?php echo CFS()->get('connecting_right_info'); ?>
 							</div>
 						</div>
 				</div>
@@ -69,7 +69,7 @@ get_header();
 						<h2 class="story-telling_cap">Story telling is our <span>language</span></h2>
 					</div>
 						<div class="story-telling_parag">
-							<!--  CUSTOM FIELD THIS SHIT -->
+						<?php echo CFS()->get('story_telling_info'); ?>
 						</div>
 						<div class="camera-funk">
 							<figure class="camera-1 camera-funk_img">
