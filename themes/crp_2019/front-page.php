@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-
+<section class="desktop-video_version">
 <div id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<video
@@ -39,7 +39,25 @@ get_header();
 </video>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</section>
+<section class="mobile-hero_version">
+<!-- THIS SECTION WILL BE USED FOR MOBILE HERO-BANNER -->
+</section>
+<section class="canvas-info">
+  <div class="container">
+    <?php echo CFS()->get('canvas_info'); ?>
+  </div>
+</section>
+<section class="canvas-statement">
+  <div class="canvas-statement_header container">
+    <h2 class="statement-header">Imagination is our <span>currency<span></h2>
+  </div>
+<section>
+<section calss="canvas-statement_2">
+  <div class="canvas-statement_2_header container">
+    <h2 class="statement-header_2">We are free from convention</h2>
+    <?php echo CFS()->get('canvas_statement_info'); ?>
+  </div>
+</section>
 <?php
-get_sidebar();
 get_footer();
