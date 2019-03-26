@@ -1286,6 +1286,7 @@ div[id^="bwg_container"] * {
   font-style: italic; }
 
 .footer {
-  background-image: url("../images/noise-footer.png");
-  height: 20rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(images/noise-footer.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(images/noise-footer.png);
+  height: 16rem;
   min-width: 100%; }

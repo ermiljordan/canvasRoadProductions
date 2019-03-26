@@ -15,8 +15,23 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<div class="footer">
-			
+			<div class="footer container">
+				<div class="footer-info">
+					<ul>
+						<li>123-456-7890</li>
+						<li>email@gmail.com</li>
+						<li>Vancouver, B.C.</li>
+					</ul>
+				</div>
+				<div class="social">
+					<a href="#">Fb</a>
+					<a href="#">In</a>
+					<a href="#">Yo</a>
+				</div>
+				<div class="corporated">
+					<p>canvas road productions<p>
+					<p>all rights reserved</p>
+				</div>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
