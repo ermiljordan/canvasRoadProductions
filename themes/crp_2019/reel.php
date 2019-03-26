@@ -32,7 +32,7 @@ get_header();
 			</section>
 			<section>
 				<div class="video-reel-section container">
-					<h2 class="video-reel-section_caption">Canvas Road <span>Productions</span><span>video reel</span></h2>
+					<h2 class="video-reel-section_caption">Canvas Road <i>Productions</i><i>video reel</i></h2>
 					<div class="video-reel-section_info">
 						<?php echo CFS()->get('video_reel_info'); ?>
 					</div>

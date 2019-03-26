@@ -20,7 +20,7 @@ get_header();
 		<main id="main" class="site-main">
 			<section class="about-crp">
 				<div class="about-wrapper">
-					<h2 class="about-header-caption">Canvas Road Productions <span class="yellow-stripe">Credit<span></h2>
+					<h2 class="about-header-caption">Canvas Road Productions <i>Credit<i></h2>
 				</div>
 			</section>
 			<!-- end of about header -->

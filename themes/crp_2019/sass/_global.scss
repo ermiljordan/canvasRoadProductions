@@ -1,0 +1,12 @@
+//Paddings
+h2,
+.video-reel-section .aerial-header {
+  padding-top: 3rem;
+}
+h2, em::before {
+    background-color: rgba(249,214,61,.8);
+    bottom: .2rem;
+    height: 1.2rem;
+    content: '';
+    display: block;
+}

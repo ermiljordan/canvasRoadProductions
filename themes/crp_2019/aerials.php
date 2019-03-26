@@ -39,7 +39,7 @@ get_header();
       <section>
       <div class="container">
         <div class="aerial-header">
-          <h2 class="aerial-header_title"><span>Aerial<span></h2>
+          <h2 class="aerial-header_title"><em>Aerial<em></h2>
         </div>
           <div class="aerial-info">
             <?php echo CFS()->get('aerial_info'); ?>

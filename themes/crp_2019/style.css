@@ -1322,3 +1322,14 @@ div[id^="bwg_container"] * {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center; }
+
+h2,
+.video-reel-section .aerial-header {
+  padding-top: 3rem; }
+
+h2, em::before {
+  background-color: rgba(249, 214, 61, 0.8);
+  bottom: .2rem;
+  height: 1.2rem;
+  content: '';
+  display: block; }
