@@ -4,4 +4,18 @@
               url(images/noise-footer.png);
   height: 16rem;
   min-width: 100%;
+  color: #fff;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+.corporation-social {
+  display: flex;
+  justify-content: space-around;
+}
+.corporated {
+  p {
+    margin: 0;
+  }
 }

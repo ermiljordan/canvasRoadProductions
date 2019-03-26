@@ -17,20 +17,20 @@
 		<div class="site-info">
 			<div class="footer container">
 				<div class="footer-info">
-					<ul>
-						<li>123-456-7890</li>
-						<li>email@gmail.com</li>
-						<li>Vancouver, B.C.</li>
-					</ul>
+						<p>123-456-7890</p>
+						<p>email@gmail.com</p>
+						<p>Vancouver, B.C.</p>
 				</div>
-				<div class="social">
-					<a href="#">Fb</a>
-					<a href="#">In</a>
-					<a href="#">Yo</a>
-				</div>
-				<div class="corporated">
-					<p>canvas road productions<p>
-					<p>all rights reserved</p>
+				<div class="corporation-social">
+					<div class="social">
+						<a href="#">Fb</a>
+						<a href="#">In</a>
+						<a href="#">Yo</a>
+					</div>
+					<div class="corporated">
+						<p>canvas road productions<p>
+						<p>all rights reserved</p>
+					</div>
 				</div>
 			</div>
 		</div><!-- .site-info -->
