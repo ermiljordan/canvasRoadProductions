@@ -1,12 +1,52 @@
+// GLOBAL
+h2 {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+}
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
 //Paddings
 h2,
 .video-reel-section .aerial-header {
   padding-top: 3rem;
 }
-h2, em::before {
-    background-color: rgba(249,214,61,.8);
-    bottom: .2rem;
-    height: 1.2rem;
-    content: '';
-    display: block;
+
+.aerial__yellow i::before {
+  background-color: rgba(249, 214, 61, 0.8);
+  bottom: 9.2rem;
+  content: "";
+  height: .8rem;
+  left: 2rem;
+  position: absolute;
+  right: 0;
+  width: 5.6rem;
+  display: block;
+}
+.about-header_caption i::before {
+  background-color: rgba(249, 214, 61, 0.8);
+  bottom: 16.2rem;
+  content: "";
+  height: .8rem;
+  left: 15.6rem;
+  position: absolute;
+  width: 5.7rem;
+  display: block;
+}
+h2 span:before {
+  background-color: rgba(249, 214, 61, 0.8);
+  bottom: 0;
+  content: "";
+  height: .8rem;
+  left: 0;
+  position: absolute;
+  width: 5.7rem;
+  display: block;
 }

@@ -1,21 +1,7 @@
-// GLOBAL
-h2 {
-  margin: 0;
-  font-size: 2em;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-style: normal;
+.about-header_caption {
+  display: flex;
+  flex-direction: column;
 }
-.container {
-  margin: 0 auto;
-  max-width: 100%;
-  padding-left: 2.4rem;
-  padding-right: 2.4rem;
-}
-
-// GLOBAL -ends
-
-
 .about-crp {
   height: 100vh;
   display: flex;
