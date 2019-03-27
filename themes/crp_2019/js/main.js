@@ -5,10 +5,10 @@ $('#hamburger-icon_open').click(function(event) {
   $('#close-icon').show();
   $('.hamburger-menu_wrapper').animate({height:'show'}, 500, function() {});
   });
-  $('#close').click(function(event) {
+  $('#close-icon').click(function(event) {
     event.stopPropagation();
     $(this).hide();
-    $('#hamburger-icon_openn').show();
+    $('#hamburger-icon_open').show();
     $('.hamburger-menu_wrapper').animate({ height: 'hide' }, 500, function() {});
 });
 
