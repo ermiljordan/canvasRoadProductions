@@ -52,8 +52,8 @@ get_header();
   <div class="canvas-statement_header container">
     <h2 class="statement-header">Imagination is our <span>currency<span></h2>
   </div>
-<section>
-<section calss="canvas-statement_2">
+</section>
+<section class="canvas-statement_2">
   <div class="canvas-statement_2_header container">
     <h2 class="statement-header_2">We are free from convention</h2>
     <?php echo CFS()->get('canvas_statement_info'); ?>

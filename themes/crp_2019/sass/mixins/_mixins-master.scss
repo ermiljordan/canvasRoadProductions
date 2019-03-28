@@ -27,3 +27,18 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
+
+$tablet-width: 600px;
+$desktop-width: 1240px; 
+
+@mixin tablet {
+   @media (min-width: $tablet-width) {
+       @content;
+   }
+}
+
+@mixin desktop {
+   @media (min-width: $desktop-width) {
+       @content;
+   }
+}

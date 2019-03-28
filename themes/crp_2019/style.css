@@ -974,9 +974,10 @@ nav {
   color: #888;
   background-color: #F0F3F5;
   text-align: center;
-  padding: 3.5rem 0 10rem; }
+  padding: 3.5rem 0 5rem; }
 
 .about-connections {
+  overflow: hidden;
   color: #888;
   background-color: #1A1A1A;
   text-align: center;
@@ -1016,6 +1017,16 @@ h2.story-captions_title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+@media (min-width: 600px) {
+  .story-img_right {
+    margin-left: 18rem; } }
+
+@media (min-width: 600px) {
+  .story-parag {
+    max-width: 23rem;
+    margin: 0 auto;
+    padding-top: 5rem; } }
 
 h2.connection-caption_title {
   color: #888;
@@ -1287,25 +1298,18 @@ div[id^="bwg_container"] * {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(images/noise-footer.png);
   height: 16rem;
   min-width: 100%;
-  color: #fff; }
-
-.footer-info {
+  color: #fff;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.corporation-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.corporated p {
-  margin: 0; }
+  display: flex; }
+  .footer p {
+    margin: 0; }
 
 .post-20 .entry-header {
   height: 90vh;
@@ -1336,3 +1340,39 @@ h2 {
 h2,
 .video-reel-section .aerial-header {
   padding-top: 3rem; }
+
+.canvas-info {
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.canvas-statement {
+  background-color: #e8e8e8;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.canvas-statement_2 {
+  background-color: #c5aa7b;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }

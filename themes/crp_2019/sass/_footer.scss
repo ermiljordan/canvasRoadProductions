@@ -5,17 +5,12 @@
   height: 16rem;
   min-width: 100%;
   color: #fff;
-}
-.footer-info {
+  text-align: center;
+  align-content: center;
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-}
-.corporation-social {
-  display: flex;
-  justify-content: space-around;
-}
-.corporated {
-  p {
-    margin: 0;
-  }
+  
+   p {
+     margin: 0;
+   }
 }

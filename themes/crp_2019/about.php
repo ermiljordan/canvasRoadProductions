@@ -31,8 +31,8 @@ get_header();
 							<figure class="story-img_left story-figure">
 								<img class="story-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
 							</figure>
-							<figure class="story-img_right story-figure">
-								<img class="story-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+							<figure class="story-img story-img_right story-figure">
+								<img class="story-img story-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
 							</figure>
 					</div> 
 						<div class="story-parag">

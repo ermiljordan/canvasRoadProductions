@@ -13,9 +13,10 @@
   color: #888;
   background-color: #F0F3F5;
   text-align: center;
-  padding: 3.5rem 0 10rem;
+  padding: 3.5rem 0 5rem;
 }
 .about-connections {
+  overflow: hidden;
   color: #888;
   background-color: #1A1A1A;
   text-align: center;
@@ -49,6 +50,18 @@ h2.story-captions_title {
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
+}
+.story-img_right {
+  @include tablet {
+    margin-left: 18rem;
+  }
+}
+.story-parag {
+  @include tablet {
+    max-width: 23rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
 }
 // Connecting people
 h2.connection-caption_title {
