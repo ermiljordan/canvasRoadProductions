@@ -5,6 +5,9 @@ h2 {
   font-family: 'Montserrat';
   font-weight: 500;
   font-style: normal;
+  @include desktop {
+    font-size: 4rem;
+  }
 }
 .container {
   margin: 0 auto;
@@ -12,11 +15,21 @@ h2 {
   padding-left: 2.4rem;
   padding-right: 2.4rem;
 }
-
+p {
+  @include desktop {
+    font-size: 1.5rem;
+  }
+}
 //Paddings
 h2,
 .video-reel-section .aerial-header {
   padding-top: 3rem;
+}
+
+.info-description {
+  @include desktop {
+    width: 90%;
+  }
 }
 
 // .aerial__yellow i::before {

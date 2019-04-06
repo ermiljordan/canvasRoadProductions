@@ -50,6 +50,9 @@ h2.story-captions_title {
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
+  @include desktop {
+    align-items: center;
+  }
 }
 .story-img_right {
   @include tablet {
@@ -61,6 +64,9 @@ h2.story-captions_title {
     max-width: 23rem;
     margin: 0 auto;
     padding-top: 5rem;
+  }
+  @include desktop {
+    max-width: 35rem;
   }
 }
 // Connecting people
@@ -78,8 +84,35 @@ h2.connection-caption_title {
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  @include desktop {
+    align-items: center;
+  }
 }
 
+.connecting-img_left {
+  @include tablet {
+    align-self: center;
+  }
+}
+.connecting-img_right {
+  @include tablet {
+    position: relative;
+    left: 30rem;
+  }
+}
+.connecting-parag {
+  @include tablet {
+    max-width: 23rem;
+    position: relative;
+    bottom: 6rem;
+  }
+  @include desktop {
+    max-width: 35rem;
+    left: 5rem;
+    bottom: 16rem;
+  }
+}
 //Story telling
 .story-tell_header {
   text-align: center;
@@ -106,8 +139,25 @@ h2.connection-caption_title {
   max-width: 89%;
   text-align: center;
 }
+.story-telling_parag {
+  @include tablet {
+    max-width: 23rem;
+    margin: 0 auto;
+  }
+  @include desktop {
+    max-width: 35rem;
+  }
+}
 img.cameras {
   max-width: 10rem;
+  @include tablet {
+    height: 18rem;
+    max-width: 20rem;
+  }
+  @include desktop {
+    height: 22rem;
+    max-width: 30rem;
+  }
 }
 .camera-funk{
   bottom: 0;
@@ -127,24 +177,58 @@ img.cameras {
 .camera-funk .camera-1:first-child{
   left: 11rem;
   top: 9rem;
+  @include tablet {
+    left: 33rem;
+    top: 6rem;
+  }
+  @include desktop {
+    left: 53rem;
+    top: 2rem;
+  }
 }
 .camera-funk .camera-2:nth-child(2) {
   left: -2rem;
   top: 19rem;
   opacity: 0.5;
+  @include tablet {
+    left: 9rem;
+    top: 13rem;
+  }
+  @include desktop {
+    left: 15rem;
+    top: 8rem;
+  }
 }
 .camera-funk .camera-2:nth-child(3) {
   top: 8rem;
   opacity: 0.5;
+  @include desktop {
+    top: 5rem;
+  }
 }.camera-funk .camera-2:nth-child(4) {
   bottom: -3rem;
   left: 13rem;
   opacity: 0.7;
+  @include tablet {
+    left: 24rem;
+  }
+  @include desktop {
+    left: 36rem;
+    bottom: -4rem;
+  }
 }
 .camera-funk .camera-2:nth-child(5) {
   bottom: 0rem;
   left: 4rem;
   opacity: 0.8;
+  @include tablet {
+    bottom: 4rem;
+    left: 24rem;
+  }
+  @include desktop {
+    bottom: 4rem;
+    left: 22rem;
+  }
 }
 
 //Banner 

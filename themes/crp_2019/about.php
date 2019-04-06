@@ -42,7 +42,6 @@ get_header();
 			</section>
 			<!-- end of about story -->
 			<section class="about-connections">
-				<div class="container">
 					<h2 class="connection-caption_title">Connecting with <span>people</span></h2>
 						<div class="connecting-wrapper">
 							<figure class="connecting-img_left story-figure">
@@ -52,6 +51,7 @@ get_header();
 								<img class="connecting-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
 							</figure>
 						</div> 
+				<div class="container">
 						<div class="connecting-parag">
 							<div class="connecting-parag_left">
 							<?php echo CFS()->get('connecting_left_info'); ?>
