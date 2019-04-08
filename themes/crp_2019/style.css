@@ -937,7 +937,11 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-size: 2rem; }
   .hamburger-menu .nav-links-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1450,7 +1454,21 @@ h2,
       align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  overflow: hidden; }
+
+@media (min-width: 1240px) {
+  .canvas-info_parag {
+    max-width: 35rem; } }
+
+.canvas-road-productions_banner_big {
+  font-size: 25rem;
+  margin: 0 auto; }
 
 .canvas-statement {
   background-color: #e8e8e8;
@@ -1474,4 +1492,16 @@ h2,
       align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }
+  @media (min-width: 1240px) {
+    .canvas-statement_2 {
+      height: 100vh; } }
+
+@media (min-width: 1240px) {
+  .canvas-statement_2_content {
+    max-width: 35rem; } }

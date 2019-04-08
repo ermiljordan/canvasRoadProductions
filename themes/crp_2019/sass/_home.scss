@@ -4,6 +4,18 @@
   display: flex;
   align-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+.canvas-info_parag {
+  @include desktop {
+    max-width: 35rem; 
+  }
+}
+.canvas-road-productions_banner_big {
+  font-size: 25rem;
+  margin: 0 auto;
 }
 .canvas-statement {
   background-color: #e8e8e8;
@@ -18,4 +30,14 @@
   display: flex;
   align-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+  @include desktop {
+    height: 100vh;
+  }
+}
+.canvas-statement_2_content {
+  @include desktop {
+    max-width: 35rem;
+  }
 }

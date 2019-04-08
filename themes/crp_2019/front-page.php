@@ -45,18 +45,25 @@ get_header();
 </section>
 <section class="canvas-info">
   <div class="container">
-    <?php echo CFS()->get('canvas_info'); ?>
+    <div class="canvas-info_parag">
+      <?php echo CFS()->get('canvas_info'); ?>
+    </div>
+  </div>
+  <div class="canvas-road-productions_banner">
+    <p class="canvas-road-productions_banner_big">Canvas Road Productions</p>
   </div>
 </section>
 <section class="canvas-statement">
   <div class="canvas-statement_header container">
-    <h2 class="statement-header">Imagination is our <span>currency<span></h2>
+    <p class="statement-header">Imagination is our currency</p>
   </div>
 </section>
 <section class="canvas-statement_2">
   <div class="canvas-statement_2_header container">
-    <h2 class="statement-header_2">We are free from convention</h2>
-    <?php echo CFS()->get('canvas_statement_info'); ?>
+    <div class="canvas-statement_2_content">
+      <h2 class="statement-header_2">We are free from convention</h2>
+      <?php echo CFS()->get('canvas_statement_info'); ?>
+    </div>
   </div>
 </section>
 <?php
