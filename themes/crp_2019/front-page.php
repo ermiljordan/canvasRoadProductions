@@ -50,7 +50,9 @@ get_header();
     </div>
   </div>
   <div class="canvas-road-productions_banner">
-    <p class="canvas-road-productions_banner_big">Canvas Road Productions</p>
+    <span>Canvas</span>
+    <span>Road</span>
+    <span>Productions</span>
   </div>
 </section>
 <section class="canvas-statement">
@@ -60,7 +62,7 @@ get_header();
 </section>
 <section class="canvas-statement_2">
   <div class="canvas-statement_2_header container">
-    <div class="canvas-statement_2_content">
+    <div class="canvas-statement_2">
       <h2 class="statement-header_2">We are free from convention</h2>
       <?php echo CFS()->get('canvas_statement_info'); ?>
     </div>

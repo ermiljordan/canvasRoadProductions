@@ -13,9 +13,10 @@
     max-width: 35rem; 
   }
 }
-.canvas-road-productions_banner_big {
-  font-size: 25rem;
-  margin: 0 auto;
+.canvas-road-productions_banner {
+  display: flex;
+  align-content: space-between;
+  font-size: 12rem;
 }
 .canvas-statement {
   background-color: #e8e8e8;
@@ -40,4 +41,8 @@
   @include desktop {
     max-width: 35rem;
   }
+}
+.statement-header {
+  font-size: 1.5rem;
+  text-align: center;
 }
