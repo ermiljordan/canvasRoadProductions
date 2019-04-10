@@ -108,6 +108,14 @@ get_header();
 							Story teller
 							<div></div>
 						</span>
+						<span>	
+							Creative direction
+							<div></div>
+							Professional
+							<div></div>
+							Story teller
+							<div></div>
+						</span>
 						</div>
 					</div>
 				</div>

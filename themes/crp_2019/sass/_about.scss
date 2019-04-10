@@ -249,23 +249,24 @@ img.cameras {
   .banner-title_inner{
     display: flex;
     justify-content: space-around;
-    animation: shimmy 3s infinite;
-    animation-direction: alternate;
    span {    
     display: flex;
     justify-content: space-between;
-    height: 1rem;
-    margin: 0 1.5rem;
-    width: 1rem;
-    background-color: #e2ceb0;
-    border-radius: 50%
+    
    }
-  }
-  @keyframes shimmy {
-    0% {
-      transform: translate3d(0, 0);    
-    }
-    100% {
-      transform: translate3d(500px,0px, 0px);
-    }
+   div {
+     border-radius: 50%;
+     height: 1rem;
+     margin: 0 1.5rem;
+     width: 1rem;
+     background-color: #e2ceb0;
+   }
+  // }
+  // @keyframes shimmy {
+  //   0% {
+  //     transform: translate3d(0, 0);    
+  //   }
+  //   100% {
+  //     transform: translate3d(1020px,0px, 0px);
+  //   }
   }
