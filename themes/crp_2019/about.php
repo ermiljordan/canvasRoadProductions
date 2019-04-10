@@ -91,7 +91,7 @@ get_header();
 				</div>
 				<div class="story-telling_banner">
 					<div class="banner-title banner-tittle--rotate js-block" data-block="title-block" data-vertical="true">
-						<div class="banner-title_inner">
+						<div class="banner-title_inner" id="scroll-banner">
 							<span>	
 							Creative direction
 							<div></div>

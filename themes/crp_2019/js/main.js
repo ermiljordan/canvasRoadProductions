@@ -19,4 +19,15 @@ $('.youtube-gallery--listing a').on('click', function(event) {
   $('.youtube-gallery--player iframe').attr('src', 'https://www.youtube.com/embed/' + $(this).data('id') + '?rel=0&showinfo=0' );
   $('.youtube-gallery--player h4').text( $(this).find('.title').text());
 });
+
+// document.getElementById("scroll-banner").animate([
+//   // keyframes
+//   { transform: 'translateX(600px)' }, 
+//   { transform: 'translateX(0px)' },
+//   { transform: 'translateX(0px)' }
+// ], { 
+//   // timing options
+//   duration: 3000,
+//   iterations: Infinity
+// });
 })(jQuery);
