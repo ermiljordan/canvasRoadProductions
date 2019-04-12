@@ -1385,9 +1385,7 @@ div[id^="bwg_container"] * {
   font-style: italic; }
 
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(images/noise-footer.png);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(images/noise-footer.png);
-  height: 16rem;
+  background: #242424;
   min-width: 100%;
   color: #fff;
   text-align: center;
@@ -1398,7 +1396,9 @@ div[id^="bwg_container"] * {
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  text-transform: uppercase;
+  font-size: .5rem; }
   .footer p {
     margin: 0; }
 
@@ -1454,7 +1454,6 @@ h2,
 
 .canvas-info {
   background-color: #f4f4f4;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1470,9 +1469,13 @@ h2,
   text-align: center;
   overflow: hidden; }
 
-@media (min-width: 1240px) {
-  .canvas-info_parag {
-    max-width: 35rem; } }
+.canvas-info_parag {
+  padding-top: 5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem; }
+  @media (min-width: 1240px) {
+    .canvas-info_parag {
+      max-width: 35rem; } }
 
 .canvas-road-productions_banner {
   display: -webkit-box;
@@ -1480,7 +1483,9 @@ h2,
   display: flex;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  font-size: 12rem; }
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem; }
 
 .canvas-statement {
   background-color: #e8e8e8;
@@ -1496,7 +1501,6 @@ h2,
 
 .canvas-statement_2 {
   background-color: #c5aa7b;
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1509,7 +1513,8 @@ h2,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
   @media (min-width: 1240px) {
     .canvas-statement_2 {
       height: 100vh; } }
@@ -1520,4 +1525,6 @@ h2,
 
 .statement-header {
   font-size: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5rem; }

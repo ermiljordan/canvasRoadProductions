@@ -1,6 +1,5 @@
 .canvas-info {
   background-color: #f4f4f4;
-  height: 100vh;
   display: flex;
   align-content: center;
   align-items: center;
@@ -9,6 +8,9 @@
   overflow: hidden;
 }
 .canvas-info_parag {
+  padding-top: 5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
   @include desktop {
     max-width: 35rem; 
   }
@@ -16,7 +18,10 @@
 .canvas-road-productions_banner {
   display: flex;
   align-content: space-between;
-  font-size: 12rem;
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+
 }
 .canvas-statement {
   background-color: #e8e8e8;
@@ -27,12 +32,12 @@
 }
 .canvas-statement_2 {
   background-color: #c5aa7b;
-  height: 50vh;
   display: flex;
   align-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  text-transform: uppercase;
   @include desktop {
     height: 100vh;
   }
@@ -45,5 +50,7 @@
 .statement-header {
   font-size: 1.5rem;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
 }
 
