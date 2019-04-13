@@ -836,6 +836,10 @@ object {
 .gallery-caption {
   display: block; }
 
+button {
+  border: none;
+  background: transparent; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
@@ -1019,6 +1023,11 @@ h2.story-captions_title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (min-width: 600px) {
+    .story-wrapper {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   @media (min-width: 1240px) {
     .story-wrapper {
       -webkit-box-align: center;
@@ -1197,7 +1206,7 @@ img.cameras {
   @media (min-width: 600px) {
     .camera-funk .camera-2:nth-child(5) {
       bottom: 4rem;
-      left: 24rem; } }
+      left: 15rem; } }
   @media (min-width: 1240px) {
     .camera-funk .camera-2:nth-child(5) {
       bottom: 4rem;
@@ -1429,7 +1438,8 @@ h2 {
   font-size: 2em;
   font-family: 'Montserrat';
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  text-transform: uppercase; }
   @media (min-width: 1240px) {
     h2 {
       font-size: 4rem; } }
@@ -1440,9 +1450,12 @@ h2 {
   padding-left: 2.4rem;
   padding-right: 2.4rem; }
 
-@media (min-width: 1240px) {
-  p {
-    font-size: 1.5rem; } }
+p {
+  text-transform: uppercase;
+  letter-spacing: .1rem; }
+  @media (min-width: 1240px) {
+    p {
+      font-size: 1.3rem; } }
 
 h2,
 .video-reel-section .aerial-header {
@@ -1499,8 +1512,9 @@ h2,
       -ms-flex-align: center;
           align-items: center; }
 
-.canvas-statement_2 {
+.canvas-statement_2_header {
   background-color: #c5aa7b;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1516,12 +1530,14 @@ h2,
   text-align: center;
   text-transform: uppercase; }
   @media (min-width: 1240px) {
-    .canvas-statement_2 {
+    .canvas-statement_2_header {
       height: 100vh; } }
 
 @media (min-width: 1240px) {
   .canvas-statement_2_content {
-    max-width: 35rem; } }
+    max-width: 35rem; }
+    .canvas-statement_2_content h2 {
+      font-size: 3rem; } }
 
 .statement-header {
   font-size: 1.5rem;

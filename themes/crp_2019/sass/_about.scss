@@ -50,6 +50,9 @@ h2.story-captions_title {
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
+  @include tablet {
+    align-items: center;
+  }
   @include desktop {
     align-items: center;
   }
@@ -223,7 +226,7 @@ img.cameras {
   opacity: 0.8;
   @include tablet {
     bottom: 4rem;
-    left: 24rem;
+    left: 15rem;
   }
   @include desktop {
     bottom: 4rem;

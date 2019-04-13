@@ -5,6 +5,7 @@ h2 {
   font-family: 'Montserrat';
   font-weight: 500;
   font-style: normal;
+  text-transform: uppercase;
   @include desktop {
     font-size: 4rem;
   }
@@ -16,8 +17,10 @@ h2 {
   padding-right: 2.4rem;
 }
 p {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
   @include desktop {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 //Paddings

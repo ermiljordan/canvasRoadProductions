@@ -30,8 +30,9 @@
   align-content: center;
   align-items: center;
 }
-.canvas-statement_2 {
+.canvas-statement_2_header {
   background-color: #c5aa7b;
+  height: 50vh;
   display: flex;
   align-content: center;
   align-items: center;
@@ -42,9 +43,13 @@
     height: 100vh;
   }
 }
+
 .canvas-statement_2_content {
   @include desktop {
     max-width: 35rem;
+    h2 {
+      font-size: 3rem;
+    }
   }
 }
 .statement-header {
