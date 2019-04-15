@@ -11,6 +11,9 @@
   padding-top: 5rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
+  @include tablet {
+    max-width: 35rem;
+  }
   @include desktop {
     max-width: 35rem; 
   }
@@ -45,6 +48,9 @@
 }
 
 .canvas-statement_2_content {
+  @include tablet {
+    max-width: 35rem;
+  }
   @include desktop {
     max-width: 35rem;
     h2 {

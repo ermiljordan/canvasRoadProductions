@@ -1393,22 +1393,23 @@ div[id^="bwg_container"] * {
   font-weight: bold;
   font-style: italic; }
 
-.footer {
+.site-info {
   background: #242424;
-  min-width: 100%;
   color: #fff;
-  text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 100%;
+  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
   text-transform: uppercase;
   font-size: .5rem; }
-  .footer p {
+  .site-info p {
     margin: 0; }
 
 .post-20 .entry-header {
@@ -1486,6 +1487,9 @@ h2,
   padding-top: 5rem;
   text-transform: uppercase;
   letter-spacing: .1rem; }
+  @media (min-width: 600px) {
+    .canvas-info_parag {
+      max-width: 35rem; } }
   @media (min-width: 1240px) {
     .canvas-info_parag {
       max-width: 35rem; } }
@@ -1532,6 +1536,10 @@ h2,
   @media (min-width: 1240px) {
     .canvas-statement_2_header {
       height: 100vh; } }
+
+@media (min-width: 600px) {
+  .canvas-statement_2_content {
+    max-width: 35rem; } }
 
 @media (min-width: 1240px) {
   .canvas-statement_2_content {
