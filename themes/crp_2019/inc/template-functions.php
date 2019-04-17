@@ -42,7 +42,7 @@ add_action( 'wp_head', 'crp_2019_pingback_header' );
 
 function crp_2019_dynamic_css() {
 	switch(true) {
-		case is_page('about');
+		case is_page('About');
 		$hero = CFS()->get('about_hero_image');
 		$custom_css = "
 					.about-crp{
@@ -50,7 +50,7 @@ function crp_2019_dynamic_css() {
 						background:
 						linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100% ),
 						url({$hero}) no-repeat center bottom;
-						background-size: cover, cover; 
+						background-size: cover, cover;
 					};";
 					break;
 					default:

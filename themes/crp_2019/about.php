@@ -20,7 +20,7 @@ get_header();
 		<main id="main" class="site-main">
 			<section class="about-crp">
 				<div class="about-wrapper">
-					<h2 class="about-header_caption">Canvas Road <span>Productions <i>Credit<i></span></h2>
+					<h2 class="about-header_caption">Canvas Road <span>Productions Credit</span></h2>
 				</div>
 			</section>
 			<!-- end of about header -->
@@ -29,10 +29,10 @@ get_header();
 					<h2 class="story-captions_title">Our <span>story</span></h2>
 					<div class="story-wrapper">
 							<figure class="story-img_left story-figure">
-								<img class="story-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+								<img class="story-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/palm-leaves.JPG" alt="Green palm tree leaves">
 							</figure>
 							<figure class="story-img story-img_right story-figure">
-								<img class="story-img story-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+								<img class="story-img story-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/silhoutte.JPG" alt="Silhoutte of a man">
 							</figure>
 					</div> 
 						<div class="story-parag">
@@ -43,12 +43,12 @@ get_header();
 			<!-- end of about story -->
 			<section class="about-connections">
 					<h2 class="connection-caption_title">Connecting with <span>people</span></h2>
-						<div class="connecting-wrapper">
+						<div class="connecting-wrapper container">
 							<figure class="connecting-img_left story-figure">
-								<img class="connecting-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+								<img class="connecting-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/tricycle.JPG" alt="Motorcycle passing by">
 							</figure>
 							<figure class="connecting-img_right story-figure">
-								<img class="connecting-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/jessica.JPG" alt="A lady standing by herself looking confused">
+								<img class="connecting-img lazy" src="<?php echo get_template_directory_uri(); ?>/images/family.JPG" alt="Father and son standing together">
 							</figure>
 						</div> 
 				<div class="container">
