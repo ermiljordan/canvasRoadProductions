@@ -40,24 +40,32 @@ add_action( 'wp_head', 'crp_2019_pingback_header' );
  * Hero banners
  * */ 
 
-function crp_2019_dynamic_css() {
+function odc_dynamic_css() {
 	switch(true) {
-		case is_page('About');
+		case is_page( 'About' ):
 		$hero = CFS()->get('about_hero_image');
 		$custom_css = "
-					.about-crp{
-						height: 100%
+					.about-crp {
 						background:
 						linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100% ),
 						url({$hero}) no-repeat center bottom;
-						background-size: cover, cover;
-					};";
+						background-size: cover, cover; 	
+				}";
+					break;
+		case is_page('contact'):
+				$subs = CFS()->get('subscribe_background');
+				$custom_css = " 
+				.sub-background {
+					background:
+					linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+					url({$subs}) no-repeat center bottom;
+					background-size: cover;
+					height: 100vh;
+				};";
 					break;
 					default:
 					$custom_css = "";
 					break;
-				}
-			wp_add_inline_style('crp-style', $custom_css);
+	}
+	wp_add_inline_style('odc-style', $custom_css);
 }
-add_action('wp_enqueue_scripts', 'crp_2019_dynamic_css');
-
