@@ -49,10 +49,12 @@ get_header();
       <?php echo CFS()->get('canvas_info'); ?>
     </div>
   </div>
-  <div class="canvas-road-productions_banner" id="banner_move">
-    <span>Canvas</span>
-    <span>Road</span>
-    <span>Productions</span>
+  <div class="marquee" id="banner_move">
+    <div>
+      <span>Canvas</span>
+      <span>Road</span>
+      <span>Productions</span>
+    </div>
   </div>
 </section>
 <section class="canvas-statement">

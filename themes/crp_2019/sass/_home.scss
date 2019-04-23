@@ -18,13 +18,19 @@
     max-width: 35rem; 
   }
 }
-.canvas-road-productions_banner {
+.marquee {
+  width: 200%;
+  overflow: hidden;
   display: flex;
   align-content: space-between;
-  font-size: 10rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
-
+  animation: marquee 7s linear infinite;
+}
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }
 .canvas-statement {
   background-color: #e8e8e8;

@@ -1,16 +1,19 @@
-.post-20 .entry-header {
-  height: 90vh;
+.contact-us {
+  height: 50vh;
   display: flex;
+  align-content: center;
   align-items: center;
-  justify-content: center;
-  text-align: center;
 }
-form {
-  text-align: center;
+.content__email, .content-address_location {
+  margin: 0;
 }
-footer.entry-footer {
-  display: none;
+.content-contact, .content-address__str{
+  padding-bottom: 3rem;
 }
-input[type="submit"]{
-  font-size: 1.5rem;
+
+.social-media__contents ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
 }

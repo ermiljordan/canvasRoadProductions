@@ -38,7 +38,11 @@
 						<div id="hamburger">
 							<div class="hamburger-menu_wrapper">
 								<div class="hamburger-menu">
-								<?php wp_nav_menu(array( 'menu_class' => 'nav-links-wrapper', 'link_before' => '<span class="nav-icon"></span>', 'link_after' => '',  'theme_location' => 'primary' )); ?>
+								<?php wp_nav_menu(array( 'menu_class' => 
+								'nav-links-wrapper', 'link_before' => 
+								'<span class="nav-icon"></span>', 'link_after' => '',  
+								'theme_location' => 'menu-1',
+								'menu_id' => 'primary-menu', )); ?>
 							</div>
 						</div>
 							<div class="hamburger-icon">

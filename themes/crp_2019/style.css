@@ -1412,27 +1412,27 @@ div[id^="bwg_container"] * {
   .site-info p {
     margin: 0; }
 
-.post-20 .entry-header {
-  height: 90vh;
+.contact-us {
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center; }
+          align-items: center; }
 
-form {
-  text-align: center; }
+.content__email, .content-address_location {
+  margin: 0; }
 
-footer.entry-footer {
-  display: none; }
+.content-contact, .content-address__str {
+  padding-bottom: 3rem; }
 
-input[type="submit"] {
-  font-size: 1.5rem; }
+.social-media__contents ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
 
 h2 {
   margin: 0;
@@ -1460,7 +1460,7 @@ p {
 
 h2,
 .video-reel-section .aerial-header {
-  padding-top: 3rem; }
+  padding-top: 2.2rem; }
 
 @media (min-width: 1240px) {
   .info-description {
@@ -1494,15 +1494,31 @@ h2,
     .canvas-info_parag {
       max-width: 35rem; } }
 
-.canvas-road-productions_banner {
+.marquee {
+  width: 200%;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  font-size: 10rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
-  letter-spacing: .2rem; }
+  letter-spacing: .2rem;
+  -webkit-animation: marquee 7s linear infinite;
+          animation: marquee 7s linear infinite; }
+
+@-webkit-keyframes marquee {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
+
+@keyframes marquee {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
 
 .canvas-statement {
   background-color: #e8e8e8;
@@ -1552,3 +1568,12 @@ h2,
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .5rem; }
+
+.post-9 {
+  padding-top: 3rem; }
+  .post-9 .entry-title {
+    display: none; }
+
+.yotu-videos {
+  padding-left: 2.4rem !important;
+  padding-right: 2.4rem !important; }
