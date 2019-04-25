@@ -1412,8 +1412,32 @@ div[id^="bwg_container"] * {
   .site-info p {
     margin: 0; }
 
+.background {
+  background-color: #131313; }
+
+h2.contact-us__content, .content-contact {
+  color: #fff; }
+
+.contact-us__content {
+  opacity: .3; }
+
+a {
+  text-decoration: none;
+  color: #ffde00; }
+  a a:visited {
+    color: none; }
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .contact-us {
-  height: 50vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1426,6 +1450,9 @@ div[id^="bwg_container"] * {
 .content__email, .content-address_location {
   margin: 0; }
 
+p.content-address_location:not(:first-child) {
+  opacity: .2; }
+
 .content-contact, .content-address__str {
   padding-bottom: 3rem; }
 
@@ -1433,6 +1460,9 @@ div[id^="bwg_container"] * {
   margin: 0;
   padding-left: 0;
   list-style: none; }
+
+body {
+  color: #000; }
 
 h2 {
   margin: 0;

@@ -15,7 +15,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main background">
     <section class="contact-us">
       <div class="contact-us__wrapper container">
         <h2 class="contact-us__content">Come say hello</h2>
@@ -28,7 +28,7 @@ get_header();
           <a href="mailto:ermiljordan64@gmail.com"><span>ermiljordan64@gmail.com</span></a>
         </div>
         <div class="content-address">
-          <div class="content-address__str">
+          <div class="content-contact content-address__str">
             <p class="content-address_location">Vancouver</p>
             <p class="content-address_location">123 street</p>
             <p class="content-address_location">B.C.</p>

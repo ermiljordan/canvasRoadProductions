@@ -1,11 +1,34 @@
+.background {
+  background-color: #131313;
+}
+h2.contact-us__content, .content-contact {
+  color: #fff;
+}
+.contact-us__content {
+  opacity: .3;
+}
+a{
+  text-decoration: none;
+  color: #ffde00;
+  a:visited {
+    color: none;
+  }
+}
+li {
+  display: flex;
+  flex-direction: column;
+}
 .contact-us {
-  height: 50vh;
+  height: 90vh;
   display: flex;
   align-content: center;
   align-items: center;
 }
 .content__email, .content-address_location {
   margin: 0;
+}
+p.content-address_location:not(:first-child) {
+  opacity: .2;
 }
 .content-contact, .content-address__str{
   padding-bottom: 3rem;
@@ -15,5 +38,4 @@
   margin: 0;
   padding-left: 0;
   list-style: none;
-
 }
