@@ -1269,7 +1269,8 @@ div[id^="bwg_container"] * {
 --------------------------------------------- */
 .youtube-gallery--player {
   max-width: 970px;
-  margin: 0 auto 70px; }
+  margin: 0 auto 70px;
+  height: 200px; }
   .youtube-gallery--player h4 {
     margin-top: 14px; }
 
@@ -1495,6 +1496,12 @@ h2,
 @media (min-width: 1240px) {
   .info-description {
     width: 90%; } }
+
+iframe {
+  height: 270px; }
+  @media (min-width: 600px) {
+    iframe {
+      height: 500px; } }
 
 .canvas-info {
   background-color: #f4f4f4;

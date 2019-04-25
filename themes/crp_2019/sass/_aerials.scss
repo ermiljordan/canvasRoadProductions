@@ -2,9 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 6em;
+		padding-top: 6em;
   }
-    
   
 /* Youtube Gallery Shortcode
 --------------------------------------------- */
@@ -12,6 +11,7 @@
 .youtube-gallery--player {
 	max-width: 970px;
 	margin: 0 auto 70px;
+	height: 200px;
 
 	h4 {
 		margin-top: 14px;
