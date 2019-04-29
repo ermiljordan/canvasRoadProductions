@@ -40,9 +40,9 @@ add_action( 'wp_head', 'crp_2019_pingback_header' );
  * Hero banners
  * */ 
 
-function odc_dynamic_css() {
+function crp_dynamic_css() {
 	switch(true) {
-		case is_page( 'About' ):
+		case is_page( 'about' ):
 		$hero = CFS()->get('about_hero_image');
 		$custom_css = "
 					.about-crp {
@@ -67,5 +67,6 @@ function odc_dynamic_css() {
 					$custom_css = "";
 					break;
 	}
-	wp_add_inline_style('odc-style', $custom_css);
+	wp_add_inline_style('crp-style', $custom_css);
 }
+add_action('wp_enqueue_scripts', 'crp_dynamic_css');
